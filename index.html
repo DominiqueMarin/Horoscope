@@ -1,0 +1,222 @@
+<html>
+
+  <head>
+
+    <title>Horiscope</title>
+
+    <link rel="stylesheet" href="age.css">
+    <script>
+
+      function Horo()
+        {
+          var month = document.getElementById("Month").value;
+          var day = document.getElementById("day").value;
+          month = parseInt(month);
+          day = parseInt(day);
+          var aries1 = "<img src ='aries.png' width = '100px' height = '100px'>";
+          var aries2 = "Loving care is prescribed for someone in your family, Aries. Offer a bowl of soup and some tea, but beyond that try and stay out of the way. Sometimes uninterrupted quiet is the best cure of all. You could use a bit of this yourself. Why not curl up with a good book? Even if it's the middle of the day, draw the shades and pretend it's night.";
+          var taurus1 = "<img src ='taurus.png' width = '100px' height = '100px'>";
+          var taurus2 = "There's tension in the air, Taurus, but there's little you can do about it. The harsh atmosphere is in stark contrast to the frivolity you felt over the last several days. It seems you received some good news. Perhaps you were finally recognized for your hard work? Don't brag about your accomplishments. It would only exacerbate the situation. Be patient. Avoid confrontation.";
+          var gemini1 = "<img src ='gemini.png' width = '100px' height = '100px'>";
+          var gemini2 = "You might be in a financial jam right now, Gemini. The stress of the situation has you considering some radical solutions. Would it really benefit your family if you took a second job? Confide in a friend and see if he or she can help you find a more agreeable solution. Perhaps a relative could give you a low-interest loan.";
+          var cancer1 = "<img src ='cancer.png' width = '100px' height = '100px'>";
+          var cancer2 = "Don't spread the good news too quickly, Cancer. As exciting as it is, nothing is confirmed yet. Keep the information under your hat until plane reservations have been made or you have the job offer in writing. Whatever the good news is, it's exactly what the doctor prescribed to give your self-confidence a boost.";
+          var leo1 = "<img src ='leo.png' width = '100px' height = '100px'>";
+          var leo2 = "If you receive a financial windfall, spend it wisely, Leo. Your tendency might be to buy gifts or treat a crowd to a lavish night on the town. But where is the enduring value? Invested carefully, a small chunk of money can grow into a much larger one, which will give you many more options. Be prudent.";
+          var virgo1 = "<img src ='virgo.png' width = '100px' height = '100px'>";
+          var virgo2 = "You're energetic and enthusiastic today, Virgo, and those around you respond favorably. It seems everyone wants to be in your orbit. Work at home and the office goes quickly and smoothly. Because you have so much energy, why not take on a new project? Normally this would send you over the edge, but today you feel you could take on anything. Go for it.";
+          var libra1 = "<img src ='libra.png' width = '100px' height = '100px'>";
+          var libra2 = "There's tension all around you, so you'll be happiest spending as much time by yourself as possible, Libra. If you must interact with people, keep your communication clear and concise. There's room for misunderstanding, which could result in a major blowup over a minor event. It simply isn't worth the trouble being with people today. Seclusion is the only place where you'll find peace.";
+          var scorpio1 = "<img src ='scorpio.png' width = '100px' height = '100px'>";
+          var scorpio2 = "You're ready for a change, Scorpio, there's no doubt about it. As you grow older your interests broaden, and you're considering pursuing some of these new interests in earnest. Perhaps school beckons, or some adult education courses. You're ready to make a new place for yourself in the world. Go ahead and get started!";
+          var sagittarius1 = "<img src ='sagittarius.png' width = '100px' height = '100px'>";
+          var sagittarius2 = "You've never looked better, Sagittarius. Your partner notices, too, and showers you with extra affection and perhaps even an unexpected gift. This should put a smile on your face! At work, you may be given responsibilities beyond your usual job. Take care to do this special assignment well. If you do, other advancements are likely to follow.";
+          var capricorn1 = "<img src ='capricorn.png' width = '100px' height = '100px'>";
+          var capricorn2 = "Sometimes a little indulgence has value far beyond its price, Capricorn. A bubble bath in the middle of the day, a luxurious hour spent browsing in a bookstore, a special outfit you've wanted for a long time - these are a few of the ways you could perk up your spirits. Why not? You could use a boost.";
+          var aquarius1 = "<img src ='aquarius.png' width = '100px' height = '100px'>";
+          var aquarius2 = "You feel as though you've turned a financial and professional corner, Aquarius. Recent accomplishments have you feeling energized and on top of the world! You exude confidence. It's a good feeling, isn't it? Members of the opposite sex are especially attracted to you right now. And who could blame them? You're looking great!";
+          var pisces1 = "<img src ='pisces.png' width = '100px' height = '100px'>";
+          var pisces2 = "Who knew you were so talented, Pisces? A creation done long ago suddenly takes on a life of its own. A short story written and submitted long ago is pulled from the bottom of the slush pile. Or a portrait you painted gets a second admiring look. Whatever the circumstances, you enjoy the recognition. Your work isn't the only thing receiving admiring glances. Your partner appreciates you, too!";
+
+          if(month == 12)
+          {
+            if (day <= 21) {
+              alert("you are a Sagittarius");
+              document.getElementById('astroSign').innerHTML = sagittarius1;
+              document.getElementById('fortune').innerHTML = sagittarius2;
+            }
+            else if (day > 21) {
+              alert("you are an Capricorn");
+              document.getElementById('astroSign').innerHTML = capricorn1;
+              document.getElementById('fortune').innerHTML = capricorn2;
+            }
+          }
+          else if (month == 11)
+          {
+            if (day <= 21) {
+              alert("you are a Scorpio");
+              document.getElementById('astroSign').innerHTML = scorpio1;
+              document.getElementById('fortune').innerHTML = scorpio2;
+            }
+            else if (day > 21) {
+              alert("you are an Sagittarius");
+              document.getElementById('astroSign').innerHTML = sagittarius1;
+              document.getElementById('fortune').innerHTML = sagittarius2;
+            }
+          }
+          else if (month == 10)
+          {
+            if (day <= 22) {
+              alert("you are a Libra");
+              document.getElementById('astroSign').innerHTML = libra1;
+              document.getElementById('fortune').innerHTML = libra2;
+            }
+            else if (day > 22) {
+              alert("you are an Scorpio");
+              document.getElementById('astroSign').innerHTML = scorpio1;
+              document.getElementById('fortune').innerHTML = scorpio2;
+            }
+          }
+          else if (month == 9)
+          {
+            if (day <= 22) {
+              alert("you are a Virgo");
+              document.getElementById('astroSign').innerHTML = virgo1;
+              document.getElementById('fortune').innerHTML = virgo2;
+            }
+            else if (day > 22) {
+              alert("you are an Libra");
+              document.getElementById('astroSign').innerHTML = libra1;
+              document.getElementById('fortune').innerHTML = libra2;
+            }
+          }
+          else if (month == 8)
+          {
+            if (day <= 22) {
+              alert("you are a Leo");
+              document.getElementById('astroSign').innerHTML = leo1;
+              document.getElementById('fortune').innerHTML = leo2;
+            }
+            else if (day > 22) {
+              alert("you are an Virgo");
+              document.getElementById('astroSign').innerHTML = virgo1;
+              document.getElementById('fortune').innerHTML = virgo2;
+            }
+          }
+          else if (month == 7)
+          {
+            if (day <= 22) {
+              alert("you are a Cancer");
+              document.getElementById('astroSign').innerHTML = cancer1;
+              document.getElementById('fortune').innerHTML = cancer2;
+            }
+            else if (day > 22) {
+              alert("you are an Leo");
+              document.getElementById('astroSign').innerHTML = leo1;
+              document.getElementById('fortune').innerHTML = leo2;
+            }
+          }
+          else if (month == 6)
+          {
+            if (day <= 20) {
+              alert("you are a Gemini");
+              document.getElementById('astroSign').innerHTML = gemini1;
+              document.getElementById('fortune').innerHTML = gemini2;
+            }
+            else if (day > 20) {
+              alert("you are an Cancer");
+              document.getElementById('astroSign').innerHTML = cancer1;
+              document.getElementById('fortune').innerHTML = cancer2;
+            }
+          }
+          else if (month == 5)
+          {
+            if (day <= 20) {
+              alert("you are a Taurus");
+              document.getElementById('astroSign').innerHTML = taurus1;
+              document.getElementById('fortune').innerHTML = taurus2;
+            }
+            else if (day > 20) {
+              alert("you are an Gemini");
+              document.getElementById('astroSign').innerHTML = gemini1;
+              document.getElementById('fortune').innerHTML = gemini2;
+            }
+          }
+          else if (month == 4)
+          {
+            if (day <= 19) {
+              alert("you are an Aries");
+              document.getElementById('astroSign').innerHTML = aries1;
+              document.getElementById('fortune').innerHTML = aries2;
+            }
+            else if (day >19) {
+              alert("you are a Taurus");
+              document.getElementById('astroSign').innerHTML = taurus1;
+              document.getElementById('fortune').innerHTML = taurus2;
+            }
+          }
+          else if (month == 3)
+          {
+            if (day <= 20) {
+              alert("you are a Pisces");
+              document.getElementById('astroSign').innerHTML = pisces1;
+              document.getElementById('fortune').innerHTML = pisces2;
+            }
+            else if (day > 20) {
+              alert("you are an Aries");
+              document.getElementById('astroSign').innerHTML = aries1;
+              document.getElementById('fortune').innerHTML = aries2;
+            }
+          }
+          else if (month == 2)
+          {
+            if (day <= 18) {
+              alert("you are a Aquarius");
+              document.getElementById('astroSign').innerHTML = aquarius1;
+              document.getElementById('fortune').innerHTML = aquarius2;
+            }
+            else if (day > 18) {
+              alert("you are an Pisces");
+              document.getElementById('astroSign').innerHTML = pisces1;
+              document.getElementById('fortune').innerHTML = pisces2;
+            }
+          }
+          else if (month == 1)
+          {
+            if (day <= 19) {
+              alert("you are a Capricorn");
+              document.getElementById('astroSign').innerHTML = capricorn1;
+              document.getElementById('fortune').innerHTML = capricorn2;
+            }
+            else if (day > 19) {
+              alert("you are an Aquarius");
+              document.getElementById('astroSign').innerHTML = aquarius1;
+              document.getElementById('fortune').innerHTML = aquarius2;
+            }
+          }
+}
+    </script>
+
+  </head>
+
+  <body>
+    <p>The Horoscope</p>
+    <br>
+    <br>
+
+    <input type="text" id="Month" value="Month">                      </input>
+    <input type="text" id="day" value="Day">                          </input>
+    <input type="button" id="button1" value="Click" onclick="Horo()"> </input>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <span id = "astroSign"></span>
+    <span id = "fortune"></span>
+    <br>
+    <br>
+    <hr>
+  </body>
+
+</html>

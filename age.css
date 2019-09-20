@@ -1,0 +1,45 @@
+body{
+  font-size: 23px;
+  color: Darkblue;
+  font-family: monospace;
+  background-color: lightgrey;
+  font-style: bold;
+  margin-top: 10px;
+}
+
+#num{
+  cursor: e-resize;
+  background-color: grey;
+  color: white;
+  border: none;
+  font-size: 18px;
+
+}
+
+#button1{
+  cursor: help;
+  background-color: grey;
+  color: white;
+  border: none;
+  font-size: 18px;
+
+}
+
+#Month
+{
+  cursor: copy;
+  background-color: grey;
+  color: white;
+  border: none;
+  font-size: 18px;
+  margin-left: 70px;
+}
+
+#day
+{
+  cursor: copy;
+  background-color: grey;
+  color: white;
+  border: none;
+  font-size: 18px;
+}
